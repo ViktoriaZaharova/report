@@ -1,0 +1,469 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+  color: #666
+
+body input:required:valid,
+body textarea:required:valid
+  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  color: #000
+  background: #ffff
+
+html, body
+  overflow-x: hidden
+  width: 100%
+
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  outline: none
+  transition: .3s ease
+  &:hover, &:focus
+    text-decoration: none
+
+.container
+  max-width: 1060px
+  padding: 0 15px
+  width: 100%
+  margin: 0 auto
+  position: relative
+
+h1
+  font-size: 40px
+  font-weight: bold
+  width: 100%
+
+h2
+  font-size: 24px
+  font-weight: bold
+  width: 100%
+
+.header-top
+  width: 100%
+  background: #fff
+  padding: 60px 0
+  margin: 0 0 69px
+  box-shadow: 0px 3px 90px 0 rgba(0, 0, 0, 0.04)
+
+.report-box
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  background: #fff
+  padding: 44px 70px 55px 64px
+  box-shadow: 0px 3px 90px 0 rgba(0, 0, 0, 0.08)
+  border-radius: 10px
+  cursor: pointer
+  transition: .3s ease
+  margin: 0 0 26px
+  &:hover
+    box-shadow: 0px 3px 90px 0 rgba(0, 0, 0, 0.15)
+  ul
+    width: 100%
+    font-weight: bold
+    li
+      width: 100%
+      display: flex
+      align-items: center
+      flex-wrap: wrap
+      margin: 0 0 15px
+      &:last-child
+        margin: 0
+      span
+        min-width: 180px
+        margin: 0 0 0 auto
+        font-weight: 900
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        img
+          display: inline
+          margin: 0 0 0 12px
+
+.report-box__title
+  margin: 0 0 35px
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.ball-val
+  font-size: 24px
+  font-weight: 900
+  margin: 0 12px
+
+.links-info
+  width: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.report-box-img
+  width: 220px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.report-box__left
+  width: calc(100% - 220px)
+  padding: 0 30px 0 0
+
+.report-box__bottom
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 36px 0 0
+  .text
+    line-height: 2.14
+    font-size: 14px
+    width: calc(100% - 85px)
+    padding: 0 0 0 20px
+
+.report-box__bottom-img
+  width: 85px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.info-wrapper
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  width: 100%
+  font-weight: bold
+  ul
+    width: auto
+    margin: 0 120px 0 0
+    &:last-child
+      margin: 0
+    li
+      display: flex
+      align-items: center
+      margin: 0 0 15px
+      &:last-child
+        margin: 0
+      strong
+        margin: 0 0 0 5px
+        font-weight: 900
+
+.credits-ball-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  border-bottom: solid 1px #d1d1d1
+  justify-content: space-between
+
+.credits-ball-box
+  margin: 0 0 56px
+  font-size: 14px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  max-width: 140px
+  width: 100%
+
+.credits-ball-box__text
+  line-height: 2.57
+
+.credits-ball-gradation
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  width: 100%
+  margin: 0 0 20px
+  border-radius: 5px
+  background-color: #f2f2f2
+  height: 72px
+  font-size: 24px
+  font-weight: 900
+
+.statistics-section
+  margin: 40px 0 50px
+  h2
+    text-align: center
+    margin: 0 auto 39px
+    font-weight: 900
+
+
+.table
+  width: 100%
+  border-radius: 10px
+  font-size: 13.5px
+  font-weight: 900
+  box-shadow: 0 3px 90px 0 rgba(0, 0, 0, 0.08)
+  .thead
+    font-size: 13.5px
+    font-weight: 900
+  .active-line
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background: url("../img/line-active.png") no-repeat left center
+        size: cover
+
+.text-active-line
+  position: absolute
+  top: 50%
+  transform: translate(0,-50%)
+  left: -80px
+  font-size: 14.5px
+  font-weight: bold
+  color: #000
+
+.tr
+  position: relative
+  display: flex
+  align-items: stretch
+
+.th
+  border: solid 1px #dddddd
+  padding: 15px
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  flex-wrap: wrap
+  width: 10%
+  &:last-child
+    width: 50%
+
+.th-row-wrapper
+  padding: 0
+  p
+    margin: 25px 0
+
+.th-row
+  width: 100%
+  display: flex
+  align-items: stretch
+  margin: 0 0 -1px
+  p
+    margin: 0
+  .th
+    flex: 1
+    &:first-child
+      border-left: none
+
+.title-table
+  color: #fff
+  text-align: left
+  font-size: 24px
+  font-weight: 900
+  background: #24b0eb
+  border-radius: 10px 10px 0 0
+  margin: 0 0 -1px
+  .th
+    width: 100%
+    padding: 29px 35px
+    border-radius: 10px 10px 0 0
+    text-align: left
+    justify-content: flex-start
+    border: none
+
+.td
+  border: solid 1px #dddddd
+  background: #fff
+  width: 7.13%
+  &:nth-child(-n+5)
+    width: 10%
+  p
+    margin: 24px 0
+    text-align: center
+
+.bg-red
+  background: #dc6464
+
+.bg-green
+  background: #92c37d
+
+.description-table-statistic
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 0 50px
+
+.description-box
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-weight: bold
+
+.cube-bg
+  width: 70px
+  height: 56px
+  border: solid 1px #d1d1d1
+  margin: 0 8px 0 0
+  min-width: 70px
+
+.information-statistic
+  width: 100%
+  background: #fff
+  border-radius: 15px
+  box-shadow: 0px 3px 90px 0 rgba(0, 0, 0, 0.05)
+  position: relative
+  padding: 46px 62px 49px 80px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  font-weight: bold
+  .icon-info
+    position: absolute
+    top: 22px
+    left: 25px
+
+.list-check
+  width: 50%
+  li
+    position: relative
+    padding: 0 0 0 29px
+    margin: 0 0 16px
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 21px
+      height: 20px
+      background: url("../img/check.png") no-repeat center
+        size: contain
+
+.type-credits
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 100px 0 0
+
+.type-credits__box
+  margin: 0 0 74px
+  width: 50%
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  &:first-child
+    .type-credits__box-img
+      margin: -40px 30px 0 -60px
+    .type-credits__box-img-text
+      position: relative
+      margin: 0 auto 14px
+      text-align: center
+      font-size: 16px
+      font-weight: bold
+      top: 0
+      right: 0
+      p
+        margin: 0
+
+.type-credits__name
+  font-size: 24px
+  font-weight: 900
+  width: 100%
+  margin: 0 0 18px
+
+.type-credits__box-info
+  max-width: 200px
+  width: 100%
+  line-height: 1.5
+
+.type-credits__box-img
+  width: 100%
+  max-width: 339px
+  position: relative
+  margin: 0 30px 0 -60px
+
+.type-credits__box-img-text
+  font-size: 14px
+  font-weight: 900
+  position: absolute
+  top: 6px
+  right: 170px
+  text-align: right
+  p
+    margin: 0 0 6px
+
+
+@import "media"
+// Всегда в конце
